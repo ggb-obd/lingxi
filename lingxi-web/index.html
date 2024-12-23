@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>灵栖之森 - 源自自然的肌肤呵护</title>
+    
+    <!-- 引入轮播图组件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 在body标签开始后，header标签之前添加背景容器 -->
+    <div class="background-container">
+        <img src="assets/logo/beijing.jpg" alt="背景图片" onload="console.log('背景图片加载成功')" onerror="console.log('背景图片加载失败')">
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="assets/logo/logo1.jpg" alt="灵栖之森">
+                <span class="logo-text">灵栖之森</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">品牌介绍</a>
+                <a href="#technology">核心技术</a>
+                <a href="#products">产品展示</a>
+                <a href="#research">研发中心</a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="搜索..." id="searchInput">
+                <button type="button" id="searchButton">
+                    <span class="search-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 轮播图部分 -->
+    <section id="home" class="hero-section">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/lunbo-imgs/1.jpg" alt="灵栖之森产品展示">
+                    <div class="slide-content">
+                        <h2>灵栖之森</h2>
+                        <p>源自自然的肌肤呵护</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/lunbo-imgs/2.jpg" alt="天然护肤">
+                    <div class="slide-content">
+                        <h2>草本配方</h2>
+                        <p>让肌肤回归自然本真</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/lunbo-imgs/3.jpg" alt="护肤体验">
+                    <div class="slide-content">
+                        <h2>匠心工艺</h2>
+                        <p>传承东方护肤智慧</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/lunbo-imgs/4.jpg" alt="品质保证">
+                    <div class="slide-content">
+                        <h2>品质保证</h2>
+                        <p>严选优质原料，用心制作</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- 在轮播图部分后添加以下内容 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">品牌介绍</h2>
+            <div class="about-content">
+                <!-- 品牌理念 -->
+                <div class="about-block">
+                    <div class="block-header">
+                        <h3>品牌理念</h3>
+                        <p class="slogan">"自然之力，唤醒活力，展现自然、真实、最美的自己"</p>
+                    </div>
+                    <div class="block-content">
+                        <div class="content-text">
+                            <p>追寻健康自然之美——我们始终认为健康自然的皮肤状态才是最美的，我们拒绝通过损伤皮肤健康来追求美丽。坚持自然护肤，用固态有氧发酵等技术，打破草本护肤功效慢的技术壁垒，追求健康自然高效的产品使用体验。让每一个用户找到健康自然美丽的自己。</p>
+                        </div>
+                        <div class="content-image">
+                            <img src="assets/pinpailinian/13011734684560_.pic_hd.jpg" alt="品牌理念">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 发展历程 -->
+                <div class="about-block">
+                    <div class="block-header">
+                        <h3>发展历程</h3>
+                    </div>
+                    <div class="block-content timeline-content">
+                        <div class="timeline-background">
+                            <img src="assets/fazhanlicheng/Tq6AWmqsjNmC2Kr-两位亚洲青年研究员正在检查植物.jpg" alt="发展历程">
+                            <div class="gradient-overlay"></div>
+                        </div>
+                        <div class="content-text timeline-text">
+                            <div class="milestone">
+                                <h4>研发起步</h4>
+                                <p>1990年成立研发团队，专注于研究问题性皮肤。2011年突破中药固态有氧发酵等多项技术，与1895家线下品牌合作，专利产品远销全球</p>
+                            </div>
+                            <div class="milestone">
+                                <h4>品牌发展</h4>
+                                <p>2019年科美尔公司成立，专注于品生产和研发，曾打造出百亿级线下品牌。品牌攻克了激素脸、铅汞斑、油痘肌等皮肤难题。</p>
+                            </div>
+                            <div class="milestone">
+                                <h4>品牌升级</h4>
+                                <p>2023年线上品牌"灵栖之森"正式成立，致力于以更便捷的方式服务更多用户，在产品效果和安全性领域不断突破，寻求极致的产品体验。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心技术section -->
+    <section id="technology" class="technology-section">
+        <div class="container">
+            <h2 class="section-title">核心技术</h2>
+            <div class="tech-container">
+                <div class="tech-grid">
+                    <!-- 第一个卡片 -->
+                    <div class="tech-card">
+                        <div class="tech-image">
+                            <img src="assets/hexinjishu/1.jpg" alt="中药护肤理念">
+                        </div>
+                        <div class="tech-preview-content">
+                            <h4>中药护肤理念</h4>
+                            <p>利用中药发酵技术，将中药护肤的理念和效果融入到现代护肤产品中，为消费者提供一种更健康、安全和有效的护肤解决方案。我们致力于传承和弘扬中药护肤的文化，让更多人享受到中药护肤的魅力。</p>
+                        </div>
+                    </div>
+                    <!-- 第二个卡片 -->
+                    <div class="tech-card">
+                        <div class="tech-image">
+                            <img src="assets/hexinjishu/2.jpg" alt="植物干细胞唤醒因子">
+                        </div>
+                        <div class="tech-preview-content">
+                            <h4>植物干细胞唤醒因子</h4>
+                            <p>采用干细胞生物技术提取因子，激活细胞，增强人体免疫力，修复损伤，排毒杀菌，消炎止痛，补充营养成分，提高局部免疫力，抗衰老，去皱纹，嫩肤美白祛斑。唤醒因子也能逆龄体内老化的干细胞，让这些老化的干细胞逆龄、年轻，恢复旺盛的细胞分化功能，从而恢复体内细胞新陈代谢的能力。</p>
+                        </div>
+                    </div>
+                    <!-- 第三个卡片 -->
+                    <div class="tech-card">
+                        <div class="tech-image">
+                            <img src="assets/hexinjishu/3.jpg" alt="中药诱导干细胞生物肽">
+                        </div>
+                        <div class="tech-preview-content">
+                            <h4>中药诱导干细胞生物肽</h4>
+                            <p>一种高效干细胞因子具有极强的生物活性，无刺激、无毒、无副作用。激活局部细胞，增强局部免疫，修复局部损伤。中药诱导干细胞激活因子在改善内环境的同时对体内病态干细胞进行全方位无死角的自然基因修饰，使自然修复功能瞬间增强。</p>
+                        </div>
+                    </div>
+                    <!-- 第四个卡片 -->
+                    <div class="tech-card">
+                        <div class="tech-image">
+                            <img src="assets/hexinjishu/4.jpg" alt="固态有氧发酵">
+                        </div>
+                        <div class="tech-preview-content">
+                            <h4>固态有氧发酵</h4>
+                            <p>本技术团队通过有氧固态发酵技术利用微生物产生胞外酶，将植物中的粗纤维、蛋白质等大分子物质分解为小分子活性活性肽，使其更容易被人体吸收利用。金花灵芝多糖的含量大大高于目前市场上的灵芝多糖含量，灵芝多糖国家药典标准为0.9%，发酵后灵芝的总多糖含量达50.01%。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">产品展示</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/hexinjishu/chanpin.jpg" alt="祛痘焕肤冻干粉">
+                    </div>
+                    <div class="product-info">
+                        <h3>祛痘焕肤冻干粉</h3>
+                        <p>采用独特的冻干技术，有效改善痘痘问题，帮助肌肤恢复健康状态</p>
+                        <a href="https://haohuo.jinritemai.com/ecommerce/trade/detail/index.html?id=3723542974903222647&origin_type=604" 
+                           class="btn-learn-more" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span>了解更多</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在products section后添加以下内容 -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <h2 class="section-title">研发中心</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <img src="assets/hexinjishu/tianran.jpg" alt="天然配方">
+                    </div>
+                    <div class="research-content">
+                        <h3>天然配方研究</h3>
+                        <p>专注于天然植物精粹的研究，从源头把控产品品质，确保每一款产品富含优质天然成分。</p>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <img src="assets/hexinjishu/yanjiu.jpg" alt="科技创新">
+                    </div>
+                    <div class="research-content">
+                        <h3>科技创新</h3>
+                        <p>运用现代科技提取工艺，保留天然成分的活性，打造高效温和的护肤产品。</p>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <img src="assets/hexinjishu/anquan.jpg" alt="安全评估">
+                    </div>
+                    <div class="research-content">
+                        <h3>安全评估</h3>
+                        <p>建立严格的产品安全评估体系，确保每一款产品都经过全面的安全性测试。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在contact section后，body标签结束前添加 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- 关于我们 -->
+                <div class="footer-section">
+                    <h4>关于灵栖之森</h4>
+                    <p>灵栖之森致力于为您提供自然优质的护肤产品让每一位顾客都能享受纯净护肤的美好体验。</p>
+                </div>
+
+                <!-- 快速链接 -->
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <div class="footer-links-grid">
+                        <a href="#about">关于我们</a>
+                        <a href="#products">产品展示</a>
+                        <a href="#technology">核心技术</a>
+                        <a href="#research">研发中心</a>
+                    </div>
+                </div>
+
+                <!-- 联系方式 -->
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <div class="contact-info">
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="微信">
+                                <img src="assets/icons/wechat.jpg" alt="微信">
+                            </a>
+                            <a href="#" class="social-icon" title="微博">
+                                <img src="assets/icons/weibo.jpg" alt="微博">
+                            </a>
+                            <a href="#" class="social-icon" title="抖音">
+                                <img src="assets/icons/douyin.jpg" alt="抖音">
+                            </a>
+                            <a href="#" class="social-icon" title="小红书">
+                                <img src="assets/icons/xiaohongshu.jpg" alt="小红书">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 版权信息 -->
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2024 灵栖之森 版权所有</p>
+        </div>
+    </footer>
+
+    <!-- 在body签结束前添加 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 检查图片加载
+            const images = document.querySelectorAll('.swiper-slide img');
+            images.forEach((img, index) => {
+                console.log(`尝试加载图片: ${img.src}`);
+                img.onerror = function() {
+                    console.error(`图片 ${index + 1} 载失败: ${img.src}`);
+                };
+                img.onload = function() {
+                    console.log(`图片 ${index + 1} 加载成功`);
+                };
+            });
+        });
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // 循环模式
+            loop: true,
+            
+            // 自动播放
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            
+            // 渐变效果
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            
+            // 分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            
+            // 导航钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoImg = document.querySelector('.logo img');
+            console.log('Logo路径:', logoImg.src);
+            console.log('Logo完整路径:', logoImg.currentSrc);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            // 监听滚动事件
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                
+                // 获取所有section
+                document.querySelectorAll('section[id]').forEach(section => {
+                    const sectionTop = section.offsetTop - 100; // 减去header高度和一些偏移
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    // 检查当前滚动位置是否在section范围内
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        // 移除所有链接的active类
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        
+                        // 为当前section对应的链接添加active类
+                        const activeLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            });
+
+            // 初始化时触发一次滚动事件，以设置初始状态
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+
+        // 搜索功能
+        function performSearch() {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            if (searchTerm) {
+                const sections = document.querySelectorAll('section');
+                let found = false;
+
+                for (const section of sections) {
+                    const text = section.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        // 找到匹配内容后，计算滚动位置
+                        const rect = section.getBoundingClientRect();
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        
+                        // 计算元素的中心位置
+                        const elementTop = rect.top + scrollTop;
+                        // 找到匹配内容，滚动到对应位置
+                        section.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // 亮显示匹配的文本
+                        highlightText(section, searchTerm);
+                        
+                        found = true;
+                        break;
+                    }
+                }
+
+                // 如果没有找到配内容
+                if (!found) {
+                    alert('未找到相关内容');
+                }
+            }
+        }
+
+        // 高亮显示匹配文本
+        function highlightText(element, searchTerm) {
+            // 移除之前的高亮
+            const highlights = document.querySelectorAll('.search-highlight');
+            highlights.forEach(h => {
+                const parent = h.parentNode;
+                parent.replaceChild(document.createTextNode(h.textContent), h);
+            });
+
+            // 添加新的高亮
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+
+            const nodes = [];
+            let node;
+            while (node = walker.nextNode()) {
+                nodes.push(node);
+            }
+
+            nodes.forEach(node => {
+                const text = node.textContent.toLowerCase();
+                const index = text.indexOf(searchTerm.toLowerCase());
+                if (index >= 0) {
+                    const span = document.createElement('span');
+                    span.className = 'search-highlight';
+                    const before = document.createTextNode(node.textContent.substring(0, index));
+                    const match = document.createTextNode(node.textContent.substring(index, index + searchTerm.length));
+                    const after = document.createTextNode(node.textContent.substring(index + searchTerm.length));
+                    span.appendChild(match);
+                    const fragment = document.createDocumentFragment();
+                    fragment.appendChild(before);
+                    fragment.appendChild(span);
+                    fragment.appendChild(after);
+                    node.parentNode.replaceChild(fragment, node);
+                }
+            });
+
+            // 3秒后移除高亮
+            setTimeout(() => {
+                const newHighlights = document.querySelectorAll('.search-highlight');
+                newHighlights.forEach(h => {
+                    h.classList.remove('search-highlight');
+                });
+            }, 3000);
+        }
+
+        // 点击搜索按钮时执行搜索
+        searchButton.addEventListener('click', performSearch);
+
+        // 按回车键时执行搜索
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('.header');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    });
+    </script>
+    <script>
+        window.onload = function() {
+            console.log('页面加载完成');
+            const bgImg = document.querySelector('.background-container img');
+            console.log('背景图片路径:', bgImg.src);
+            console.log('背景图片是否加载:', bgImg.complete);
+            console.log('背景容器样式:', getComputedStyle(document.querySelector('.background-container')));
+        }
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        // 添加点击事件监听
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                        inline: 'nearest'
+                    });
+                }
+            });
+        });
+    });
+    </script>
+    <style>
+    .btn-learn-more {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-learn-more:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(74, 103, 65, 0.3);
+    }
+
+    .btn-learn-more:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(74, 103, 65, 0.2);
+    }
+
+    /* 添加点击波纹效果 */
+    .btn-learn-more::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(0);
+        opacity: 0;
+        border-radius: 25px;
+        transition: all 0.4s ease-out;
+    }
+
+    .btn-learn-more:active::after {
+        transform: scale(2);
+        opacity: 0;
+    }
+    </style>
+</body>
+</html> 
